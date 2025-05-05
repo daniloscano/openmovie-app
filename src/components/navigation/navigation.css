@@ -1,0 +1,12 @@
+nav {
+    background-color: var(--color-bg);
+    border-bottom: solid 1px var(--color-border);
+}
+
+.navigation-brand a {
+    color: var(--color-accent);
+}
+
+.navigation-links a {
+    color: var(--color-text-primary);
+}

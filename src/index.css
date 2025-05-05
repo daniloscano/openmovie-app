@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Color Palette Light Mode */
+    --color-bg: #ECF0F1;
+    --color-accent: #009688;
+    --color-highlight: #FF6600;
+
+    --color-text-primary: #2C3E50;
+    --color-text-secondary: #34495E;
+    --color-border: #BDC3C7;
+    --color-card-bg: #FFFFFF;
+
+    /* Font Families */
+    --font-primary: 'Rubik';
+    --font-secondary: 'Albert Sans';
+    --font-body: 'Inter';
+
+    --base-line-height: 1.6;
+}
+
+main {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary), sans-serif;
+    color: var(--color-text-primary);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    /* Color Palette Dark Mode */
+    --color-bg: #2C3E50;
+    --color-accent: #009688;
+    --color-highlight: #FF6600;
+
+    --color-text-primary: #ECF0F1;
+    --color-text-secondary: #BDC3C7;
+    --color-border: #34495E;
+    --color-card-bg: #34495E;
+}
