@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://use.typekit.net/kgt1yoe.css");
+
 
 :root[data-theme="light"] {
     /* Color Palette Light Mode */
@@ -13,7 +15,7 @@
 
     /* Font Families */
     --font-primary: 'Rubik';
-    --font-secondary: 'Albert Sans';
+    --font-secondary: 'Source Sans Pro';
     --font-body: 'Inter';
 
     --base-line-height: 1.6;
@@ -25,7 +27,7 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-primary), sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     color: var(--color-text-primary);
 }
 
