@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root {
+:root[data-theme="light"] {
     /* Color Palette Light Mode */
     --color-bg: #ECF0F1;
     --color-accent: #009688;
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@media (prefers-color-scheme: dark) {
+:root[data-theme="dark"] {
     /* Color Palette Dark Mode */
     --color-bg: #2C3E50;
     --color-accent: #009688;

@@ -2,9 +2,13 @@ import {Link} from "react-router-dom";
 import './navigation.css'
 import {navLinks} from "./partials/navLinks.js";
 import NavigationLink from "./partials/NavigationLink.jsx";
-import {Heart, Search} from "lucide-react";
+import {MoonStar, Sun, Search} from "lucide-react";
+import {useContext} from "react";
+import {ThemeContext} from "../../contexts/ThemeContext.jsx";
 
 const Navigation = () => {
+    const { theme, toggleTheme } = useContext(ThemeContext)
+
     return (
         <>
             <nav>
@@ -19,8 +23,9 @@ const Navigation = () => {
                     </div>
                     <div className="d-flex align-items-center gap-4 navigation-links">
                         {
-                            navLinks.map(link => (
+                            navLinks.map((link, index) => (
                                 <NavigationLink
+                                    key={`navigation-link-${index}`}
                                     link={link}
                                 />
                             ))
@@ -30,8 +35,13 @@ const Navigation = () => {
                         <button className="btn">
                             <Search size={24} />
                         </button>
-                        <button className="btn btn-outline-dark rounded rounded-3">
-                            DarkMode Toggle
+                        <button
+                            onClick={toggleTheme}
+                            className="btn btn-outline-dark rounded rounded-3"
+                        >
+                            {
+                                theme === 'light' ? <MoonStar /> : <Sun />
+                            }
                         </button>
                     </div>
                 </div>
