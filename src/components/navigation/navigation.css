@@ -9,4 +9,43 @@ nav {
 
 .navigation-links a {
     color: var(--color-text-primary);
+    transition: all 0.4s ease;
+}
+
+.navigation-links a:hover {
+    color: var(--color-text-primary);
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.navigation-links a:active {
+    color: var(--color-accent);
+}
+
+.navigation-links a.active-link {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.btn-search {
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+    border: solid 2px var(--color-bg);
+}
+
+.btn-search:hover {
+    background-color: var(--color-accent) !important;
+    color: var(--color-bg) !important;
+    border: solid 2px var(--color-accent);
+}
+
+.btn-toggle-theme {
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+    border: solid 2px var(--color-accent);
+}
+
+.btn-toggle-theme:hover, .btn-toggle-theme:active {
+    background-color: var(--color-accent) !important;
+    color: var(--color-bg) !important;
 }

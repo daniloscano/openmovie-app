@@ -1,10 +1,13 @@
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const NavigationLink = ({ link }) => {
+    const { pathname } = useLocation();
+
+
     return (
         <>
             <Link
-                className="text-decoration-none"
+                className={`text-decoration-none ${pathname === link.href ? 'active-link' : ''}`}
                 to={link.href}>
                 {link.page}
             </Link>

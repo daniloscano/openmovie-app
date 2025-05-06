@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {useLocation, Link} from "react-router-dom";
 import './navigation.css'
 import {navLinks} from "./partials/navLinks.js";
 import NavigationLink from "./partials/NavigationLink.jsx";
@@ -32,15 +32,15 @@ const Navigation = () => {
                         }
                     </div>
                     <div className="d-flex align-items-center gap-2 navigation-actions">
-                        <button className="btn">
-                            <Search size={24} />
+                        <button className="btn btn-search">
+                            <Search strokeWidth={3} size={24} />
                         </button>
                         <button
                             onClick={toggleTheme}
-                            className="btn btn-outline-dark rounded rounded-3"
+                            className="btn rounded rounded-3 btn-toggle-theme"
                         >
                             {
-                                theme === 'light' ? <MoonStar /> : <Sun />
+                                theme === 'light' ? <MoonStar strokeWidth={2} size={24} /> : <Sun strokeWidth={2} size={24} />
                             }
                         </button>
                     </div>

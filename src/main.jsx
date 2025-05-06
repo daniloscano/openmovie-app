@@ -5,12 +5,15 @@ import './index.css'
 import App from './App.jsx'
 import {PrimeReactProvider} from "primereact/api";
 import {ThemeProvider} from "./contexts/ThemeContext.jsx";
+import {ItemsProvider} from "./contexts/ItemsContext.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <PrimeReactProvider>
             <ThemeProvider>
-                <App/>
+                <ItemsProvider>
+                    <App/>
+                </ItemsProvider>
             </ThemeProvider>
         </PrimeReactProvider>
     </StrictMode>,

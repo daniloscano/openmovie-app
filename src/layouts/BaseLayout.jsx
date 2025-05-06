@@ -1,10 +1,12 @@
 import Navigation from "../components/navigation/Navigation.jsx";
 
-const BaseLayout = ({ children }) => {
+const BaseLayout = ({children}) => {
     return (
         <>
-            <Navigation />
-            { children }
+            <Navigation/>
+            <main>
+                {children}
+            </main>
         </>
     );
 };
