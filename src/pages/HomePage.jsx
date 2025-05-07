@@ -1,5 +1,5 @@
 import BaseLayout from "../layouts/BaseLayout.jsx";
-import CarouselSection from "../components/carouselSection/CarouselSection.jsx";
+import SliderSection from "../components/sliderSection/SliderSection.jsx";
 import {ItemsContext} from "../contexts/ItemsContext.jsx";
 import {useContext, useEffect} from "react";
 
@@ -13,12 +13,12 @@ const HomePage = () => {
     return (
         <>
             <BaseLayout>
-                <CarouselSection
+                <SliderSection
                     title={'Weekly Trendings'}
                     items={items}
                 />
 
-                <CarouselSection
+                <SliderSection
                     title={'Second Trendings'}
                     items={items}
                 />
