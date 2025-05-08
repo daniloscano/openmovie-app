@@ -14,12 +14,12 @@ const HomePage = () => {
         <>
             <BaseLayout>
                 <SliderSection
-                    title={'Weekly Trendings'}
+                    title={'Trendings'}
                     items={items}
                 />
 
                 <SliderSection
-                    title={'Second Trendings'}
+                    title={'Action'}
                     items={items}
                 />
             </BaseLayout>

@@ -4,7 +4,6 @@ import SliderCard from "./partials/SliderCard.jsx";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
 const SliderSection = ({title, items}) => {
 
     return (
@@ -17,7 +16,7 @@ const SliderSection = ({title, items}) => {
                     <Swiper
                         modules={[Navigation]}
                         spaceBetween={20}
-                        slidesPerView={3}
+                        slidesPerView={4}
                         navigation
                     >
                         {
